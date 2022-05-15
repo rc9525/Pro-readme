@@ -1,23 +1,54 @@
 {
-  "name": "static-site",
+  "name": "pro-readme",
   "version": "1.0.0",
+  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)   ## Description w   ## Table of Contents * [Installation](#installation) * [Usage](#usage) * [License](#license) * [Contributing](#contributing) * [Tests](#tests) * [Questions](#questions) ## Installation r ## Usage r ## License This application uses MIT license  ## Contributing f ## Tests s ## Questions For any additional questions or issues, you can reach out to me  via email at rf Otheriwise fee free to further view my work on my github page at [we](https://github.com/we/).",
   "main": "index.js",
+  "dependencies": {
+    "ansi-escapes": "^3.2.0",
+    "ansi-regex": "^4.1.0",
+    "cli-cursor": "^2.1.0",
+    "color-convert": "^1.9.3",
+    "ansi-styles": "^3.2.1",
+    "chalk": "^2.4.2",
+    "chardet": "^0.7.0",
+    "cli-width": "^2.2.1",
+    "has-flag": "^3.0.0",
+    "escape-string-regexp": "^1.0.5",
+    "color-name": "^1.1.3",
+    "external-editor": "^3.1.0",
+    "iconv-lite": "^0.4.24",
+    "figures": "^2.0.0",
+    "inquirer": "^6.5.2",
+    "is-fullwidth-code-point": "^2.0.0",
+    "lodash": "^4.17.21",
+    "mimic-fn": "^1.2.0",
+    "onetime": "^2.0.1",
+    "os-tmpdir": "^1.0.2",
+    "restore-cursor": "^2.0.0",
+    "mute-stream": "^0.0.7",
+    "run-async": "^2.4.1",
+    "rxjs": "^6.6.7",
+    "safer-buffer": "^2.1.2",
+    "signal-exit": "^3.0.7",
+    "string-width": "^2.1.1",
+    "strip-ansi": "^5.2.0",
+    "through": "^2.3.8",
+    "tmp": "^0.0.33",
+    "supports-color": "^5.5.0",
+    "tslib": "^1.14.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "inquirer": "^6.5.2"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rc9525/Pro-readme.git"
   },
-  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/rc9525/Pro-readme/issues"
   },
-  "homepage": "https://github.com/rc9525/Pro-readme#readme",
-  "description": ""
+  "homepage": "https://github.com/rc9525/Pro-readme#readme"
 }

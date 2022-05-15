@@ -1,72 +1,83 @@
 
-function init() {
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generateMarkdown = require("./utils/generateMarkdown");
 
-  const fs = require("fs");
-  const inquirer = require("inquirer");
-  const generateMarkdown = require("./utils/generateMarkdown.js")
+// TODO: Create an array of questions for user input
+const questions = [
+            {
+                type: 'input',
+                message: 'What is your project title?',
+                name: 'title'
+            },
+            {
+                type: 'input',
+                message: 'Who contributed to this project?',
+                name:'contributors'
+            },
+            {
+                type: 'input',
+                message: 'Please describe your project.',
+                name: 'description'
+            },
+           
+           {
+                type: 'input',
+                message: 'How do you install the project?',
+                name: 'installation'
+            },
+            {
+                type: 'input',
+                message: 'How is the project used?',
+                name: 'usage'
+            },
+            {   type: 'list',
+                message: 'Which license are you using?',
+                name: 'license',
+                choices: [
+                 'mit', 'GNU AGPLv3', 'Apache 2.0', 'Boost Software Liscense 1.0', 'none' 
+                ]
+            },
+            {
+                type: 'input',
+                message: 'Can someone contribute to this project?',
+                name: 'contribute'
+            },
+            {
+                type: 'input',
+                message: 'Are there any tests for this project?',
+                name: 'tests'
+            },
+            {
+                type: 'input',
+                message: 'What is your email address?',
+                name: 'email'
+            },
+            {
+                type: 'input',
+                message: 'What is your GitHub username?',
+                name: 'gitHub'
+            },
+            
 
+];
 
-  inquirer
-    .prompt([
-
-      {
-        type: "input",
-        name: "title",
-        message: "What is the title of your project?"
-      },
-      {
-        type: "input",
-        name: "description",
-        message: "What is the description of your project?"
-      },
-      {
-        type: "list",
-        message: "What kind of license do you want for the project?",
-        name: "license",
-        choices: ["MIT", "Gpl-3.0", "Unlicense", "Apache-2.0", "None"],
-      },
-      {
-
-        type: "input",
-        message: "How can the user run tests for your project?",
-        name: "tests",
-      },
-      {
-        type: "input",
-        message:
-          "How can a user contributes to your poject?",
-        name: "contributing",
-      },
-      {
-        type: "input",
-        message:
-          "What is your GitHub username?",
-        name: "input",
-      },
-      {
-        type: "input",
-        message:
-          "What is your e-mail?",
-        name: "input",
-      },
-
-    ])
-    .then((data) => {
-      console.log(data);
-      fs.writeFile('README.md', generateMarkdown(data),
-        (error) => {
-          if (error) {
-            console.log('Input your data')
-          }
-          console.log('Success README generated')
-
-        }
-      )
-    }
-    )
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err){ console.log(err)}
+    })
 }
 
-init()
+// TODO: Create a function to initialize app
+function init() {
+    inquirer.prompt(questions)
+    .then(results => {
+        const markdown = generateMarkdown(results)
+        writeToFile('readME.md', markdown)
+        console.log('Your readME.md was successfully created')
+    })
+}
 
-
-
+// Function call to initialize app
+init();

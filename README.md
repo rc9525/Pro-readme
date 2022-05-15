@@ -1,27 +1,25 @@
+# readme
+  This project was created by ronald
+## Description
+for homework 10
+## Table of Contents 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+## Installation
 
-# d ![GitHub package.json version](https://img.shields.io/github/package-json/v/WarriorofZarona/Good-README-Generator)
-f
-# Tables of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-* [Credits](#credits)
-# Installation
+## Usage
+
+## License
+The license used for this file is mit [https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/). 
+## Badges
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Features
 undefined
-# Usage
-undefined
-# License
-MIT
-# Contributing
-undefined
-# Tests
-g
-# Questions
-![Profile Avatar](undefined)
-If you have any questions, please e-mail me at undefined.
-# Credits
-Github: [undefined](undefined)
-Copyright undefined. All Rights Reserved.
+## How to Contribute
+yes
+## Tests
+node index.js
+## Contact
+If you have any questions about the project, the best email is 123@gmail.com. Also check out my github at [https://github.com/rc9525](https://github.com/https://github.com/rc9525/)
